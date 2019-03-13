@@ -2,7 +2,7 @@ class User < ApplicationRecord
   extend OmniauthAuthenticable
   extend FastAuthenticable
 
-  devise :database_authenticatable, :registerable, :confirmable,
+  devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
          :omniauthable, omniauth_providers: [:facebook]
 
